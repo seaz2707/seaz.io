@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- นายวชิรวิทย์ จุโฬทก -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08.js-cal-number.html</title>
+</head>
+<body>
+         Number : <Input type="text" name="num1" id="num1"style="width: 50px;">
+        <br>
+         Number : <Input type="text" name="num2" id="num2"style="width: 50px;">
+            <br>
+            <br>
+            <button style="width: 30px;" onclick="sum()">+</button>
+            <button style="width: 30px;" onclick="minus()">-</button>
+            <button style="width: 30px;" onclick="mutiply()">*</button>
+            <button style="width: 30px;" onclick="devide()">/</button>
+            <br>
+            <br>
+            <!-- <p id="output">Ans = </p> -->
+            Ans = <span id="output"></span>
+            <script>
+                let n1 =0
+                let n2 =0
+                let n3 =0
+                function nt() {
+                n1 = Number(document.getElementById('num1').value)
+                n2 = Number(document.getElementById('num2').value)
+                }
+                function sum(paeans) {
+                    nt()
+                    ans = n1 + n2
+                    document.getElementById('output').innerHTML = ans
+                }
+
+                function minus(paeans) {
+                    nt()
+                    ans = n1 - n2
+                    document.getElementById('output').innerHTML = ans
+                }
+
+                function mutiply(paeans) {
+                    nt()
+                    ans = n1 * n2
+                    document.getElementById('output').innerHTML = ans
+                }
+
+                function devide(paeans) {
+                    nt()
+                    ans = n1 / n2
+                    document.getElementById('output').innerHTML = ans
+                }
+            </script>
+    
+</body>
+</html>
